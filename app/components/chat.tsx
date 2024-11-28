@@ -12,7 +12,7 @@ interface Chat {
 
 interface Props {
     chats : Chat[],
-    onSend: (text: string) => any
+    onSend: (text: string) => void
 }
 
 export default function ChatComp({chats, onSend} : Props) {
