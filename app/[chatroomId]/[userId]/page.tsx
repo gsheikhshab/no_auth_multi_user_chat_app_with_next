@@ -9,12 +9,12 @@ import { useParams } from 'next/navigation';
 import { onCreateChat } from '@/src/graphql/subscriptions';
 import { createChat } from '@/src/graphql/mutations';
 
-interface PageProps {
+/*interface PageProps {
     params: {
         chatroomId: string;
         userId: string; 
     }
-}
+}*/
 
 export default function CahtRoom() { //({params}: PageProps) {
 
