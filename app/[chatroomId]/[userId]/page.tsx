@@ -44,7 +44,7 @@ export default function CahtRoom() { //({params}: PageProps) {
         .then((res) => {
             setChats(res.data.chatsByChatroom.items);
         })
-    }, [params.chatroomId]);
+    }, []);
 
     useEffect(() => {
         const subscription =  client.graphql({
@@ -66,7 +66,7 @@ export default function CahtRoom() { //({params}: PageProps) {
         return ()=> {
             subscription.unsubscribe();
         }
-    }, [params.chatroomId]);
+    }, []);
 
     async function handleSend(text: string) {
         await client.graphql(
